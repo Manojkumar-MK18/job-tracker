@@ -1,23 +1,15 @@
-import React, { useState } from 'react';
-import './App.css';
+import "./App.css";
+import AddJob from "./components/Jobs/adds";
+import JobLists from "./components/Jobs/lists";
+import { Route, Routes } from "react-router";
 
 function App() {
-    const [count, setCount] = useState(0);
-
-    // Handlers
-    const increment = () => setCount(count + 1);
-    const decrement = () => setCount(count - 1);
-    const reset = () => setCount(0);
-
-    return (
-        <div className="App">
-            <h1>Counter App</h1>
-            <h2>Count: {count}</h2>
-            <button onClick={increment}>Increment</button>
-            <button onClick={decrement}>Decrement</button>
-            <button onClick={reset}>Reset</button>
-        </div>
-    );
+  return (
+    <Routes>
+      <Route path="/" element={<JobLists />} />
+      <Route path="/addJob" element={<AddJob />} />
+    </Routes>
+  );
 }
 
 export default App;

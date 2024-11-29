@@ -1,0 +1,33 @@
+.jobs_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: lightgray;
+}
+.job_list_container {
+  display: flex;
+  flex-direction: row;
+  background-color: wheat;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.card {
+  width: 400px;
+  display: flex;
+}
+.form_container {
+  background-color: wheat;
+}
+
+form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 30px 0;
+}
